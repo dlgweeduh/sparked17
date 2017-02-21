@@ -15,8 +15,11 @@ jQuery(function($) {
 		// 		$('.intro-tables').addClass('animated fadeInUp').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend');
 		// 	});
 		// });
-
 		// Header Init
+			$('.word-swap').typed({
+				strings: [ "Thinkers.", "Creators.", "Sparked."],
+				typeSpeed: 200, // typing speed       
+		}) 
 		if ($(window).height() > $(window).width()) {
 			var ratio = $('.parallax').width() / $('.parallax').height();
 			$('.parallax img').css('height', ($(window).height()) + 'px');
@@ -51,9 +54,9 @@ jQuery(function($) {
 		$('nav.navbar-fixed-top .navbar-brand img').attr('src', $('nav.navbar-fixed-top .navbar-brand img').data("active-url"));
 
 		// Typing Intro Init
-		$(".typed").typewriter({
-			speed: 60
-		});
+		// $(".typed").typewriter({
+		// 	speed: 60
+		// });
 
 		// Popup Form Init
 		var i = 0;
