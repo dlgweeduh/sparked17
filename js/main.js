@@ -6,7 +6,8 @@ jQuery(function($) {
 	var ratio = 2;
 
 	// Window Load
-	$(window).load(function() {
+	//$(window).load(function() {
+
 		// Preloader
 		// $('.intro-tables, .parallax, header').css('opacity', '0');
 		// $('.preloader').addClass('animated fadeOut').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function() {
@@ -77,7 +78,7 @@ jQuery(function($) {
 			scrollSpeed: 400,
 			filter: ':not(.btn)'
 		});
-	});
+	//});
 	// Window Scroll
 	function onScroll() {
 		if ($(window).scrollTop() > 50) {
