@@ -1,11 +1,17 @@
 /*
+
+//http://www.color-hex.com/color/00b8f0
 	main blue #00B8F0
 	light blue #B8ECFF
-	dark blue #2C4BB1
-	
-	green 1 #69E4B9
-	green 2 #59C5A4
-	green 3 #88EE7F
+	dark blue #2c4bb1 / #006480
+	dark blue2 #0081A5
+
+//http://www.color-hex.com/color/0dd9bb
+	green 1 #0DD9BB
+	green 2 #008c79
+	green 3 #cef7f1
+	lightest green #cef7f1
+
 	yellow  #BBE849
 	grey #ECF1FD
 
@@ -29,9 +35,36 @@
     font-weight: normal;
     font-style: normal;
 }
-@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+@font-face {
+    font-family: 'brooklynBold';
+    src: url('../fonts/brooklyn/Brooklyn-Bold.eot');
+    src: url('../fonts/brooklyn/Brooklyn-Bold.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/brooklyn/Brooklyn-Bold.woff') format('woff'),
+         url('../fonts/brooklyn/Brooklyn-Bold.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'proximaNovaLight';
+    src: url('../fonts/proximaNova/ProximaNova-Light.eot');
+    src: url('../fonts/proximaNova/ProximaNova-Light.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/proximaNova/ProximaNova-Light.woff') format('woff'),
+         url('../fonts/proximaNova/ProximaNova-Light.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'proximaNovaThin';
+    src: url('../fonts/proximaNova/ProximaNova-Thin.eot');
+    src: url('../fonts/proximaNova/ProximaNova-Thin.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/proximaNova/ProximaNova-Thin.woff') format('woff'),
+         url('../fonts/proximaNova/ProximaNova-Thin.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
 body {
-	font-family: 'brooklynLight', sans-serif;
+	font-family: 'proximaNovaLight', sans-serif;
 	font-size: 14px;
 	overflow-x: hidden;
 	color: #2a3237;
@@ -84,20 +117,17 @@ p {
 }
 
 h1,
-h2,
-h3,
-h4,
-h5,
-h6
+h2
 {
-	font-family: 'brooklynBook', monospace, serif;
+	font-family: 'brooklynBold', monospace, serif;
 	position: relative;
 	margin: 10px 0;
 }
+h3,
 h4,
 h5,
 h6 {
-	font-family: 'brooklynLight', monospace, serif;
+	font-family: 'brooklynBook', monospace, serif;
 }
 h1 {
 	font-size: 60px;
@@ -235,6 +265,9 @@ nav.navbar-fixed-top {
 nav.navbar-fixed-top .navbar-nav > li > a:not(.btn) {
 	color: #bbb;
 }
+.navbar-nav > li > a {
+	font-family: 'brooklynLight';
+}
 
 .icon-bar {
 	background: #bbb;
@@ -242,6 +275,7 @@ nav.navbar-fixed-top .navbar-nav > li > a:not(.btn) {
 /* Buttons */
 
 .btn {
+	font-family: 'brooklynBook';
 	font-size: 18px;
 	display: inline-block;
 	padding: 15px 30px;
@@ -370,7 +404,7 @@ section {
 }
 
 .intro-table-first {
-	background-image: url('../img/table-1.jpg');
+	background-image: url('../img/table-3.jpg');
 }
 
 .intro-table-hover {
@@ -392,7 +426,7 @@ section {
 }
 
 .intro-table-third {
-	background-image: url('../img/table-3.jpg');
+	background-image: url('../img/table-1.jpg');
 }
 
 .intro-table-hover .expand {
@@ -437,6 +471,7 @@ section {
 .intro-tables .intro-table .heading {
 	margin: 0;
 	padding: 30px;
+	font-family: 'brooklynBold';
 }
 
 .intro-tables .intro-table .small-heading {
@@ -519,9 +554,9 @@ section {
 
 .service .icon-holder {
 	position: relative;
-	top: 100px;
+	top: 70px;
 	display: inline-block;
-	margin-bottom: 40px;
+	margin-bottom: 20px;
 	padding: 10px;
 	background: #00B8F0;
 	-webkit-transition: all 0.3s ease;
@@ -536,7 +571,7 @@ section {
 }
 
 .service .icon-holder > img.icon {
-	width: 40px;
+	width: 80px;
 }
 
 .service:hover {
@@ -829,6 +864,11 @@ footer .social-footer li:hover a {
 }
 
 .modal-dialog {
+	width: 100%;
+	max-width: 1000px;
+	margin: 0 auto;
+}
+.modal-dialog2 {
 	width: 100%;
 	max-width: 560px;
 	margin: 0 auto;
