@@ -1244,5 +1244,56 @@ footer .social-footer li:hover a {
 }
 
 
+/*
+STYLING FOR ACUITY
+
+@font-face {
+    font-family: 'Brooklyn-Bold';
+    src: url('https://s3.amazonaws.com/sparkedtech/Brooklyn-Bold.eot');
+    src: url('https://sparkedtech.s3.amazonaws.com/Brooklyn-Bold.eot')
+           format('embedded-opentype'),
+         url('https://sparkedtech.s3.amazonaws.com/Brooklyn-Bold.woff') format('woff'),
+         url('https://sparkedtech.s3.amazonaws.com/Brooklyn-Bold.svg')
+           format('svg');
+}
+@font-face {
+    font-family: 'Brooklyn-Book';
+    src: url('https://s3.amazonaws.com/sparkedtech/Brooklyn-Book.eot');
+    src: url('https://sparkedtech.s3.amazonaws.com/Brooklyn-Book.eot')
+           format('embedded-opentype'),
+         url('https://sparkedtech.s3.amazonaws.com/Brooklyn-Book.woff') format('woff'),
+         url('https://sparkedtech.s3.amazonaws.com/Brooklyn-Book.svg')
+           format('svg');
+}
+body {
+    font-family: 'Brooklyn-Bold', sans-serif;
+    color: #333;
+}
+.choose-date-time .choose-time, .reschedule-choose-date-time .choose-time {
+    font-family: 'Brooklyn-Book', sans-serif;
+}
+.choose-date-time .choose-time input[type="radio"]+label:hover {
+    color: #00B8F0;
+}
+.choose-date-time .choose-time input[type="radio"]+label:hover {
+    border-color: #2C4BB1;
+    border-radius: 0;
+}
+.step-number {
+    background: #00B8F0;
+    color: #fff;
+    border-radius: 0;
+    width: 37.5px;
+    height: 37.5px;
+    display: inline-block;
+    text-align: center;
+    padding-top: 8px;
+    margin-right: 7.5px;
+}
+.duration-container {
+    font-family: 'Brooklyn-Book', sans-serif;
+}
+
+*/
 
 
