@@ -27,12 +27,17 @@ jQuery(function($) {
 			$('.parallax img').css('width', $('.parallax').height() * ratio + 'px');
 		}
 
-		$('header').height($(window).height() + 80);
+		$('header').height($(window).height() - 10);
+		$('header.programs').height($(window).height() / 1.3);
 		$('section .cut').each(function() {
 			if ($(this).hasClass('cut-top'))
 				$(this).css('border-right-width', $(this).parent().width() + "px");
 			else if ($(this).hasClass('cut-bottom'))
 				$(this).css('border-left-width', $(this).parent().width() + "px");
+			else if ($(this).hasClass('cut-bottom2'))
+				$(this).css('border-left-width', $(this).parent().width() + "px");
+			else if ($(this).hasClass('cut-bottom3'))
+				$(this).css('border-left-width', $(this).parent().width() + "px");			
 		});
 
 		// Sliders Init

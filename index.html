@@ -70,9 +70,17 @@
 			<!-- Collect the nav links, forms, and other content for toggling -->
 			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 				<ul class="nav navbar-nav navbar-right main-nav">
-					<li><a href="#services">About Sparked</a></li>
-					<li><a href="#team">The Sparked Path</a></li>
-					<li><a href="#pricing">How it works</a></li>
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Learning Styles <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="mentorship.html">Virtual Mentorship</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="bootcamp.html">Summer BootCamp</a></li>
+          </ul>
+					</li>
+					<!-- end dropdown -->
+					<li><a href="curriculum.html">Curriculum</a></li>
+					<li><a href="about.html">About Sparked</a></li>
 					<li><a href="#" data-toggle="modal" data-target="#modal1" class="btn btn-blue">Sign Up</a></li>
 				</ul>
 			</div>
@@ -102,8 +110,8 @@
 			</div>
 		</div>
 	</header>
-	<section>
-		<div class="cut cut-top"></div>
+	<section class="bg1">
+		<div class=""></div>
 		<div class="container">
 			<div class="row intro-tables">
 				<div class="col-md-4">
@@ -174,7 +182,7 @@
 			</div>
 		</div>
 	</section>
-	<section id="services" class="section">
+	<section id="services" class="section no-padding">
 		<div class="container">
 			<div class="row text-center title">
 				<h2>Spark a love for Coding</h2>
@@ -281,7 +289,7 @@
 					<div class="pricing">
 						<div class="box-main active" data-img="img/pricing1.jpg">
 							<h4 class="white">Virtual Mentorship</h4>
-							<h4 class="white regular light">$200 <span class="small-font">/ month</span></h4>
+							<h4 class="white regular light">$250 <span class="small-font">/ month</span></h4>
 							<a href="#" data-toggle="modal" data-target="#modal1" class="btn btn-white-fill">Sign Up Now</a>
 							<i class="info-icon icon_question"></i>
 						</div>
@@ -299,7 +307,7 @@
 					<div class="pricing">
 						<div class="box-main" data-img="img/pricing2.jpg">
 							<h4 class="white">Summer BootCamp</h4>
-							<h4 class="white regular light">$250.00 <span class="small-font"></span></h4>
+							<!-- <h4 class="white regular light">$250.00 <span class="small-font">/ week</span></h4> -->
 							<a href="#" data-toggle="modal" data-target="#modal1" class="btn btn-white-fill">Sign Up Now</a>
 							<i class="info-icon icon_question"></i>
 						</div>

@@ -122,12 +122,14 @@ h2
 	font-family: 'brooklynBold', monospace, serif;
 	position: relative;
 	margin: 10px 0;
+	color: #333;
 }
 h3,
 h4,
 h5,
 h6 {
 	font-family: 'brooklynBook', monospace, serif;
+	color: #333;
 }
 h1 {
 	font-size: 60px;
@@ -180,6 +182,13 @@ header {
 	width: 100%;
 	color: white;
 	background-size: cover;
+}
+header.programs {
+	position: relative;
+	width: 100%;
+	color: white;
+	background-size: cover;
+	background: url(../img/pentagonBG2.jpg);
 }
 
 header .table {
@@ -248,6 +257,25 @@ nav.navbar {
 	-webkit-transition: all 0.3s ease;
 	transition: all 0.3s ease;
 }
+.nav .open > a, .nav .open > a:hover, .nav .open > a:focus {
+  background-color: rgba(0,0,0,0);
+  border-color: #337ab7;
+}
+.navbar-nav.program-nav > li > a:not(.btn) {
+	color: #bbb;
+}
+.dropdown-menu {
+	border-radius: 0px;
+}
+.dropdown-menu > li > a {
+  display: block;
+  padding: 10px 20px;
+  clear: both;
+  font-weight: normal;
+  line-height: 1.42857143;
+  color: #bbb;
+  white-space: nowrap;
+}
 
 nav.navbar .navbar-nav li.active a:not(.btn) {
 	color: #00B8F0 !important;
@@ -256,7 +284,7 @@ nav.navbar .navbar-nav li.active a:not(.btn) {
 nav.navbar-fixed-top {
 	z-index: 9499;
 	top: 0;
-	padding: 25px 0;
+	padding: 10px 0;
 	opacity: 0;
 	background: white;
 	box-shadow: 0px 4px 3px rgba(0, 0, 0, 0.05);
@@ -362,12 +390,19 @@ section {
 	padding: 40px 0;
 	background: #fff;
 }
+.section {
+	padding: 40px 0;
+	background: #fff;
+}
 
 .section-padded {
 	padding: 140px 0 40px;
 }
+.section.no-padding {
+	padding-top: 0;
+}
 
-/*.cut-top {
+.cut-top {
 	content: ' ';
 	position: absolute;
 	z-index: 1;
@@ -377,7 +412,7 @@ section {
 	height: 0;
 	border-top: 81px solid transparent;
 	border-right: 30px solid white;
-}*/
+}
 
 .cut-bottom {
 	content: ' ';
@@ -390,9 +425,32 @@ section {
 	border-bottom: 80px solid transparent;
 	border-left: 30px solid #00b8f0;
 }
+.cut-bottom2 {
+	content: ' ';
+	position: absolute;
+	z-index: 1;
+	bottom: -80px;
+	left: 0;
+	width: 0;
+	height: 0;
+	border-bottom: 80px solid transparent;
+	border-left: 30px solid #0DD9BB;
+}
+.cut-bottom3 {
+	content: ' ';
+	position: absolute;
+	z-index: 1;
+	bottom: -80px;
+	left: 0;
+	width: 0;
+	height: 0;
+	border-bottom: 80px solid transparent;
+	border-left: 30px solid #2c4bb1;
+}
+
 
 .intro-tables {
-	top: -130px;
+	top: -80px;
 	position: relative;
 }
 
@@ -540,10 +598,16 @@ section {
 #services.section  {
 	background: #00B8F0;
 }
+#services.section.bg2  {
+	background: #0DD9BB;
+}
+#services.section.bg3  {
+	background: #2c4bb1;
+}
 
 .service {
 	width: 100%;
-	height: 320px;
+	height: 400px;
 	margin: 20px 0;
 	text-align: center;
 	border: 1px solid #ECF1FD;
@@ -561,6 +625,12 @@ section {
 	background: #00B8F0;
 	-webkit-transition: all 0.3s ease;
 	transition: all 0.3s ease;
+}
+.service .icon-holder.ih2 {
+	background: #0DD9BB;
+}
+.service .icon-holder.ih3 {
+	background: #2c4bb1;
 }
 
 .service .heading {
@@ -811,6 +881,8 @@ footer .social-footer li a {
 footer .social-footer li:hover a {
 	color: #00B8F0;
 }
+
+
 /* Form Control */
 
 .form-control {
@@ -1096,7 +1168,12 @@ footer .social-footer li:hover a {
 .white {
 	color: white;
 }
-
+.gray {
+	color: #bbb;
+}
+.dark-text {
+	color: #333;
+}
 .light-white {
 	color: rgba(255, 255, 255, 0.7);
 }
@@ -1117,8 +1194,12 @@ footer .social-footer li:hover a {
 	color: #00B8F0;
 }
 
-.blue-bg {
+.bg1 {
 	background: #00B8F0;
+}
+
+.bg2 {
+	background: #0DD9BB;
 }
 
 .muted {
